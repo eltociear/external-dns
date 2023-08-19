@@ -380,7 +380,7 @@ If using your own domain that was registered with a third-party domain registrar
 Connect your `kubectl` client to the cluster you want to test ExternalDNS with.
 Then apply one of the following manifests file to deploy ExternalDNS. You can check if your cluster has RBAC by `kubectl api-versions | grep rbac.authorization.k8s.io`.
 
-For clusters with RBAC enabled, be sure to choose the correct `namespace`.  For this tutorial, the enviornment variable `EXTERNALDNS_NS` will refer to the namespace.  You can set this to a value of your choice:
+For clusters with RBAC enabled, be sure to choose the correct `namespace`.  For this tutorial, the environment variable `EXTERNALDNS_NS` will refer to the namespace.  You can set this to a value of your choice:
 
 ```bash
 export EXTERNALDNS_NS="default" # externaldns, kube-addons, etc
